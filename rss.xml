@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@flaviojmendes]]></title><description><![CDATA[Some random texts showing my coding experiences.]]></description><link>https://flaviojmendes.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jul 2020 11:20:38 GMT</lastBuildDate><item><title><![CDATA[How did I get and apartment in Dublin using JS?]]></title><description><![CDATA[Introduction After two years living in Co. Kerry, Ireland my wife Kamila and I decided it was time to move. We were missing some…]]></description><link>https://flaviojmendes.com/how-did-i-get-apartment-in-dublin-using-js/</link><guid isPermaLink="false">https://flaviojmendes.com/how-did-i-get-apartment-in-dublin-using-js/</guid><pubDate>Wed, 01 Jul 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;After two years living in Co. Kerry, Ireland my wife Kamila and I decided it was time to move. We were missing some opportunities, so we decided to go to Dublin.&lt;/p&gt;
+&lt;p&gt;Subsequently, when I got the job I was looking for was when the tough part came. Finding an apartment to rent.&lt;/p&gt;
+&lt;p&gt;Since the beginning of our thoughts in moving, we knew it was going to be hard to find an apartment. First of all, because it is getting harder every day to find a good apartment at a reasonable price in the Dublin area. As if that was not enough we have Pepo, a small 5-year-old Yorkshire Terrier dog who has always been part of our family. And Irish landlords are known to be not as pet-friendly as the could.&lt;/p&gt;
+&lt;p&gt;We knew the search was going to be hard if we were not in Dublin to visit the apartments and negotiate with the landlords. Then we made a plan. Coincidently, Kamila was going to Brazil on the same day I was starting in my new job. Also, I was going to Brazil 17 days later. So we decided I was going to get an Airbnb for this period while I was searching for a definitive place.&lt;/p&gt;
+&lt;p&gt;So, on my first day in the city, I accessed Daft (Ireland’s №1 Property Website, as they describe themselves) and started the search in the areas and budget we were interested in. After all the messages of interest sent I went to sleep dreaming of receiving all the responses in the following day. Mere illusion. Of those I’ve sent the message, two replied. One answered that all views were full and the other answered they didn’t accept pets.&lt;/p&gt;
+&lt;p&gt;But what about the others? Well, when you look carefully in the advertisement you can see how many people have visualized it. Then, based on that you can imagine how many messages the advertiser receives, making impossible to answer everybody, most probably leading to the first few the privilege of receiving an answer.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/046d9044f3d9e9d69339e40fe7cf2ccb/87254/daft-stats.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 33.78378378378378%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAAt0lEQVQY06WQyQqDQBBE5/8/LLjgDor7LgqiSNSjk0dMDsFLSOpU9HTXMsJ1XVVVkyRRFMW2bc/zbk9YlmUYBsOu66SUx3HIC8Q4jmEYVlWVpmmWZXmew5umQQ5eFAUL9ze2bVvXdd/313Hf92VZBkEQxzGrvu87jsOkbVtE67rGOYoiXsmIoqZp8DOLkH9AIEM3apumib+u63CcT+0rPo6HYeCekHSb53maJibLsnzlTCu+6rfYD5uCiCyqnAWhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Stats about an apartment in Daft&quot;
+        title=&quot;Stats about an apartment in Daft&quot;
+        src=&quot;/static/046d9044f3d9e9d69339e40fe7cf2ccb/fcda8/daft-stats.png&quot;
+        srcset=&quot;/static/046d9044f3d9e9d69339e40fe7cf2ccb/12f09/daft-stats.png 148w,
+/static/046d9044f3d9e9d69339e40fe7cf2ccb/e4a3f/daft-stats.png 295w,
+/static/046d9044f3d9e9d69339e40fe7cf2ccb/fcda8/daft-stats.png 590w,
+/static/046d9044f3d9e9d69339e40fe7cf2ccb/87254/daft-stats.png 604w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Rationalization&lt;/h2&gt;
+&lt;p&gt;Then I realized that there is an alert that you can configure in Daft. So any apartment that matches your filter will be sent to your email. I have configured it, while I was still refreshing the page every 5 minutes of my day.&lt;/p&gt;
+&lt;p&gt;I started receiving more answers but I was still missing some nice apartments. The email alerts sometimes were taking more than 30 minutes to arrive and also sometimes I forgot to check my email.&lt;/p&gt;
+&lt;p&gt;After one week and just 3 apartments visited I was seated at Starbucks searching for apartments and thinking what to do to increase the conversion rate of my queries.&lt;/p&gt;
+&lt;p&gt;Eureka! I will write some program to do all this search for me, so I will never miss one single apartment.&lt;/p&gt;
+&lt;h2&gt;Let’s Have Some Fun&lt;/h2&gt;
+&lt;p&gt;So the fun part started. I’ve chosen Javascript, just because it is easy.&lt;/p&gt;
+&lt;p&gt;I also thought that maybe a CLI (Command Line Interface) was better, so I didn’t have to build any complex graphics or web browser application.&lt;/p&gt;
+&lt;p&gt;Then, I decided to use oclif, that has a very simple implementation. Also, I have used some other dependencies for scraping, notifications, etc.&lt;/p&gt;
+&lt;p&gt;I have thought also that once I would have a process running in my Terminal, I could build a simple dashboard using Blessed so I could have some feedback of what was happening.
+So, the usage of the App was quite simple:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/180f262eadd650966dc593994a516c25/4ef49/home-seek-help.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 33.108108108108105%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAA0ElEQVQY05VQa0sDMRDMY3ezySW5R9uzd5Xip4JSpP0o/v//5YQDBVHQZViWCTOzWXO9XSlyg7bulczfK681raU89t1DRk9z/of4frsvxwWDtfaTxGyd3crY38XjOuVDnZ5nKYES6xgpkvSq+06q6pQAx/4L5Jx4L2TJGS4cdnF9O5/en8bLvp777pi9eO7EB4IdZ2kXSQx3kKTEOUgNIA2iwqC7l/nwusBvWwfJMiiXEKYIDb7w89owkyz5VHEtbLWRBLKHWNrroC2kXeK79gOeNgqw0PEXGwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;home-seek -h&quot;
+        title=&quot;home-seek -h&quot;
+        src=&quot;/static/180f262eadd650966dc593994a516c25/fcda8/home-seek-help.png&quot;
+        srcset=&quot;/static/180f262eadd650966dc593994a516c25/12f09/home-seek-help.png 148w,
+/static/180f262eadd650966dc593994a516c25/e4a3f/home-seek-help.png 295w,
+/static/180f262eadd650966dc593994a516c25/fcda8/home-seek-help.png 590w,
+/static/180f262eadd650966dc593994a516c25/efc66/home-seek-help.png 885w,
+/static/180f262eadd650966dc593994a516c25/4ef49/home-seek-help.png 890w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And the final screen was:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cf7617bfeb261fcec818e007df5799be/2cefc/home-seek-screen.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.48648648648649%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABtUlEQVQoz41SaY+jMAwNhDgH4dpyJFyhTFtaqYVpV7vz///ZGtoZaaX5ME9P6PnJju0EMs+X9+V0v59/Py739+lxP8/zcVmOt9v4Nla9K08nNy/nx+OyLKePj/lxv9yub3//XK+3iQz7Q9v2wzA6N/Ru33bO2qbvXJ5XNGAMpDFN1++d23edOx6nwY113Y7jAU3ihrHv+3Fcv13X9RuMMYwxQggXytgaD0Xg6dM0DcPQtu3hcMBC0jSdtaZp6rq2VVWhwMrdbhdFEQDjQuZ5YesGYa11zmEepmGjummJ5wdkhed5PpI8A7Q9f0PgreKZ8x98ygj22hkLKqWUMwirps1KKxOjkkpEhYwLmVRqC1VcvczN5yojRfUrivnajBAaQFLUOitUZlRaqgSJxaVMipeO8gAUSE1BrJ09n70mXSeBz/Bz/M3/SvCoh/zqRApjC1NKnYkok/FOoAjTVYQp8BBEyIQGoQMmcSkRR6AlcBUwwZgiOk11FolYyyRGcq24DmWaoGASQHGmAELuU7y3YB0V349TSreb/vYmvwUuhUQoFeJf4OOCOAyO9AMKBupJjrsAOuof2vspjDD2b8wAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;home-seek dashboard&quot;
+        title=&quot;home-seek dashboard&quot;
+        src=&quot;/static/cf7617bfeb261fcec818e007df5799be/fcda8/home-seek-screen.png&quot;
+        srcset=&quot;/static/cf7617bfeb261fcec818e007df5799be/12f09/home-seek-screen.png 148w,
+/static/cf7617bfeb261fcec818e007df5799be/e4a3f/home-seek-screen.png 295w,
+/static/cf7617bfeb261fcec818e007df5799be/fcda8/home-seek-screen.png 590w,
+/static/cf7617bfeb261fcec818e007df5799be/efc66/home-seek-screen.png 885w,
+/static/cf7617bfeb261fcec818e007df5799be/c83ae/home-seek-screen.png 1180w,
+/static/cf7617bfeb261fcec818e007df5799be/2cefc/home-seek-screen.png 1400w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Also, I have implemented a Notification, so the App would compare the previous search with the current one, and if any new Apartment was found it would notify and already open a browser tab with the new results. This way I wouldn’t miss a second to take a look at the new opportunity.&lt;/p&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;p&gt;Finally, after having a lot of fun implementing this on the weekend, a new Monday arrived and it was time to put the App to work. And it was a very productive week. I got a lot more of apartment viewings comparing to the previous one.&lt;/p&gt;
+&lt;p&gt;Lots of responses due to an early interest shown, so my emails and calls were on the first ones to reach the Agents.&lt;/p&gt;
+&lt;p&gt;Then, on Saturday I was at Costa (not loyal to Starbucks I know..) and received the notification of an apartment in the area I was looking for. There was a contact phone and I called.&lt;/p&gt;
+&lt;p&gt;Me: — Hi, I have just seen an apartment to let.&lt;/p&gt;
+&lt;p&gt;Agent: — Oh.. yeah… what a coincidence, I have just pressed the save button on Daft. But can you come tomorrow (Sunday) to view it?&lt;/p&gt;
+&lt;p&gt;Me: — Sure, I will be there!&lt;/p&gt;
+&lt;p&gt;So I went there, I was the only one she scheduled for Sunday. The apartment was pretty good with also a good price and I said, I want it. And she said, it’s yours.&lt;/p&gt;
+&lt;p&gt;I’d say if it wasn’t for this small bot I built probably I wouldn’t get a schedule for Sunday and I would need to compete with many more interested people.&lt;/p&gt;
+&lt;h2&gt;Ok, so how can I also use it?&lt;/h2&gt;
+&lt;p&gt;If you read everything until here you might be curious about using it (or not), but home-seek is available at NPM:
+&lt;a href=&quot;https://www.npmjs.com/package/home-seek&quot;&gt;https://www.npmjs.com/package/home-seek&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Feel free to use it, open a Pull Request, give suggestions.&lt;/p&gt;
+&lt;p&gt;Thanks,&lt;/p&gt;</content:encoded></item></channel></rss>
