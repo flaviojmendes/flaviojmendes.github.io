@@ -1,0 +1,29 @@
+.blog-title {
+    color: #000000 ;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+body {
+    font-family: 'Zilla Slab';
+}
+
+
+.row-bio {
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 14px;
+}
+
+.post-title a {
+    color: #2A2A2A;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+
+.blog-post h2 {
+    margin-top: 32px;
+}

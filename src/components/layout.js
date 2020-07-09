@@ -1,69 +1,64 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Image from "gatsby-image"
 
-import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
+  const data = useStaticQuery(graphql`
+    query LayoutQuery {
+      logo: file(absolutePath: { regex: "/logo.png/" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  let header = (
+
+
         <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
+              to={`/`}  className={'blog-title'}
         >
-          {title}
+          <Image
+            style={{
+              marginTop: 5,
+              marginBottom: 10,
+            }}
+            fluid={data.logo.childImageSharp.fluid} ></Image>
         </Link>
-      </h1>
+
     )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+
   return (
-    <div
+    <Container
       style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>{header}</header>
+      <Row>
+        <Col md={3} xs={12}>
+          {header}
+        </Col>
+      </Row>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <Col  className={'bio'}>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            Do you like my texts? You can buy me a coffee: {' '}
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="LD4JGZCK4VUFC" />
+            <input className={'align-middle'} type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_IE/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+        </Col>
       </footer>
-    </div>
+    </Container>
   )
 }
 

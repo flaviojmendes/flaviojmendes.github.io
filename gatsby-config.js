@@ -30,6 +30,17 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+
+          {
+            resolve: `gatsby-remark-embed-video`,
+            options: {
+              maxWidth: 800,
+              ratio: 1.77,
+              height: 400,
+              related: false,
+              noIframerder: true,
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -53,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-171598270-1`,
       },
     },
     `gatsby-plugin-feed`,
