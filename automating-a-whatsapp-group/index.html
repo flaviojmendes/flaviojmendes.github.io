@@ -33,13 +33,13 @@ It basically emulates a Web Session and listen to commands, having some predefin
 <p>So I started <strong><a href="https://github.com/Futebot/futezap">Futezap</a></strong>. </p>
 <p>The code to read the commands is very simple.</p>
 <p><strong>Writing an onMessage handler:</strong></p>
-<deckgo-highlight-code   terminal="none" >
+<deckgo-highlight-code   terminal="carbon" >
           <code slot="code">client.onMessage(async message =&gt; {
     await handleMessage(message, client);
 });</code>
         </deckgo-highlight-code>
 <p><strong>And then have a list of commands to compare the calls:</strong></p>
-<deckgo-highlight-code   terminal="none" >
+<deckgo-highlight-code   terminal="carbon" >
           <code slot="code">const commands = [
        {prefix: &#39;.ping&#39;, function: sendPing},
        {prefix: &#39;.help&#39;, function: sendHelp},
@@ -69,7 +69,7 @@ It basically emulates a Web Session and listen to commands, having some predefin
         </deckgo-highlight-code>
 <p><strong>With that, it was up to my creativity to write the commands.
 For example, to send a GIF Sticker based on a keyword searched on Google:</strong></p>
-<deckgo-highlight-code   terminal="none" >
+<deckgo-highlight-code   terminal="carbon" >
           <code slot="code">export async function sendGifSticker(message: Message, client: Client, attempt: number = 0) {
 
     try {

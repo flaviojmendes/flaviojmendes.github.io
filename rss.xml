@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@flaviojmendes]]></title><description><![CDATA[Some random texts showing my coding experiences.]]></description><link>https://flaviojmendes.com/</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Oct 2020 11:11:23 GMT</lastBuildDate><item><title><![CDATA[A bit of fun improving our Whatsapp Group.]]></title><description><![CDATA[Introduction Everything started when I received my first animated sticker on Whatsapp. 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@flaviojmendes]]></title><description><![CDATA[Some random texts showing my coding experiences.]]></description><link>https://flaviojmendes.com/</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Oct 2020 11:24:57 GMT</lastBuildDate><item><title><![CDATA[A bit of fun improving our Whatsapp Group.]]></title><description><![CDATA[Introduction Everything started when I received my first animated sticker on Whatsapp. 
 I searched about how to create my own and saw that I…]]></description><link>https://flaviojmendes.com//automating-a-whatsapp-group/</link><guid isPermaLink="false">https://flaviojmendes.com//automating-a-whatsapp-group/</guid><pubDate>Mon, 26 Oct 2020 01:02:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Everything started when I received my first animated sticker on Whatsapp.
 I searched about how to create my own and saw that I couldn’t.
@@ -19,13 +19,13 @@ It basically emulates a Web Session and listen to commands, having some predefin
 &lt;p&gt;So I started &lt;strong&gt;&lt;a href=&quot;https://github.com/Futebot/futezap&quot;&gt;Futezap&lt;/a&gt;&lt;/strong&gt;. &lt;/p&gt;
 &lt;p&gt;The code to read the commands is very simple.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Writing an onMessage handler:&lt;/strong&gt;&lt;/p&gt;
-&lt;deckgo-highlight-code   terminal=&quot;none&quot; &gt;
+&lt;deckgo-highlight-code   terminal=&quot;carbon&quot; &gt;
           &lt;code slot=&quot;code&quot;&gt;client.onMessage(async message =&amp;gt; {
     await handleMessage(message, client);
 });&lt;/code&gt;
         &lt;/deckgo-highlight-code&gt;
 &lt;p&gt;&lt;strong&gt;And then have a list of commands to compare the calls:&lt;/strong&gt;&lt;/p&gt;
-&lt;deckgo-highlight-code   terminal=&quot;none&quot; &gt;
+&lt;deckgo-highlight-code   terminal=&quot;carbon&quot; &gt;
           &lt;code slot=&quot;code&quot;&gt;const commands = [
        {prefix: &amp;#39;.ping&amp;#39;, function: sendPing},
        {prefix: &amp;#39;.help&amp;#39;, function: sendHelp},
@@ -55,7 +55,7 @@ It basically emulates a Web Session and listen to commands, having some predefin
         &lt;/deckgo-highlight-code&gt;
 &lt;p&gt;&lt;strong&gt;With that, it was up to my creativity to write the commands.
 For example, to send a GIF Sticker based on a keyword searched on Google:&lt;/strong&gt;&lt;/p&gt;
-&lt;deckgo-highlight-code   terminal=&quot;none&quot; &gt;
+&lt;deckgo-highlight-code   terminal=&quot;carbon&quot; &gt;
           &lt;code slot=&quot;code&quot;&gt;export async function sendGifSticker(message: Message, client: Client, attempt: number = 0) {
 
     try {
