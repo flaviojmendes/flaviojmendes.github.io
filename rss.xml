@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@flaviojmendes]]></title><description><![CDATA[Some random texts showing my coding experiences.]]></description><link>https://flaviojmendes.com/</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 10 Jul 2020 14:58:39 GMT</lastBuildDate><item><title><![CDATA[How far can I go to provide free apps?]]></title><description><![CDATA[Introduction My life with development started at 2001, when I was learning HTML, Javascript and Photoshop. But for me, with 13 years old it…]]></description><link>https://flaviojmendes.com//why-do-i-develop-free-stuff/</link><guid isPermaLink="false">https://flaviojmendes.com//why-do-i-develop-free-stuff/</guid><pubDate>Tue, 07 Jul 2020 17:02:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@flaviojmendes]]></title><description><![CDATA[Some random texts showing my coding experiences.]]></description><link>https://flaviojmendes.com/</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Oct 2020 11:11:23 GMT</lastBuildDate><item><title><![CDATA[A bit of fun improving our Whatsapp Group.]]></title><description><![CDATA[Introduction Everything started when I received my first animated sticker on Whatsapp. 
+I searched about how to create my own and saw that I…]]></description><link>https://flaviojmendes.com//automating-a-whatsapp-group/</link><guid isPermaLink="false">https://flaviojmendes.com//automating-a-whatsapp-group/</guid><pubDate>Mon, 26 Oct 2020 01:02:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Everything started when I received my first animated sticker on Whatsapp.
+I searched about how to create my own and saw that I couldn’t.
+Just downloading some unofficial versions of the app.&lt;/p&gt;
+&lt;p&gt;Then doing a bit of research I found  &lt;a href=&quot;%5Bhttps://github.com/open-wa/wa-automate-nodejs%5D&quot;&gt;wa-automate&lt;/a&gt; an automating tool for Whatsapp.
+It basically emulates a Web Session and listen to commands, having some predefined commands, such as sending messages, stickers, etc.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Ok, let’s have a bit of fun?&lt;/h2&gt;
+&lt;p&gt;Based on that I started to have some ideas. Such as: &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Many times I keep searching a sticker that matches some reaction and lose the timing of the joke&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Ok, so let’s do a command that sends a Sticker by the text.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: And when I want to send an Youtube video? It would be nice to send it directly from the chat..&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Sure! Why not?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: And in that moments that people ask you something that is just doing a google search?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Yeah, just send a LMGTFY link!&lt;/p&gt;
+&lt;p&gt;and many more…&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;So I started &lt;strong&gt;&lt;a href=&quot;https://github.com/Futebot/futezap&quot;&gt;Futezap&lt;/a&gt;&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;The code to read the commands is very simple.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Writing an onMessage handler:&lt;/strong&gt;&lt;/p&gt;
+&lt;deckgo-highlight-code   terminal=&quot;none&quot; &gt;
+          &lt;code slot=&quot;code&quot;&gt;client.onMessage(async message =&amp;gt; {
+    await handleMessage(message, client);
+});&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;&lt;strong&gt;And then have a list of commands to compare the calls:&lt;/strong&gt;&lt;/p&gt;
+&lt;deckgo-highlight-code   terminal=&quot;none&quot; &gt;
+          &lt;code slot=&quot;code&quot;&gt;const commands = [
+       {prefix: &amp;#39;.ping&amp;#39;, function: sendPing},
+       {prefix: &amp;#39;.help&amp;#39;, function: sendHelp},
+       {prefix: &amp;#39;.youtube&amp;#39;, function: sendYoutubeURL},
+       {prefix: &amp;#39;.lmgtfy&amp;#39;, function: sendLMGTFY},
+       {prefix: &amp;#39;.image&amp;#39;, function: sendImage},
+       {prefix: &amp;#39;.sticker&amp;#39;, function: sendSticker},
+       {prefix: &amp;#39;.gif&amp;#39;, function: sendGifSticker},
+       {prefix: &amp;#39;.groupimg&amp;#39;, function: setGroupImage}
+   ]
+   
+   async function handleMessage(message: Message, client: Client) {
+   
+       if((message.caption &amp;amp;&amp;amp; !message.caption.startsWith(&amp;quot;.&amp;quot;)) &amp;amp;&amp;amp; (message.body &amp;amp;&amp;amp; !message.body.startsWith(&amp;quot;.&amp;quot;))) {
+           return;
+       }
+   
+       const commandCalled = message.caption ? message.caption : message.body;
+   
+       for (const command of commands) {
+           if(commandCalled === command.prefix) {
+               await command.function(message, client);
+           }
+       }
+   
+   }&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;&lt;strong&gt;With that, it was up to my creativity to write the commands.
+For example, to send a GIF Sticker based on a keyword searched on Google:&lt;/strong&gt;&lt;/p&gt;
+&lt;deckgo-highlight-code   terminal=&quot;none&quot; &gt;
+          &lt;code slot=&quot;code&quot;&gt;export async function sendGifSticker(message: Message, client: Client, attempt: number = 0) {
+
+    try {
+        const imgUrl = await getGifURLFromText(message.body.substr(message.body.indexOf(&amp;#39; &amp;#39;), message.body.length), attempt);
+        await client.sendStickerfromUrl(message.chatId, imgUrl);
+    } catch (e) {
+        attempt += 1;
+        if(attempt &amp;lt; 5) await sendGifSticker(message, client, attempt);
+    }
+}
+
+export async function getGifURLFromText(text: string, index: number = 0): string {
+    const asyncFunction = util.promisify(gis);
+    const opts = {
+        searchTerm: text,
+        queryStringAddition: &amp;#39;&amp;amp;tbs=itp:animated&amp;#39;
+    };
+    const result: any = await asyncFunction(opts);
+
+    return result[index].url;
+}&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;&lt;strong&gt;The result was:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 71.42857142857143%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div class=&quot;embedVideo-container&quot;&gt; &lt;iframe title src=&quot;https://www.youtube.com/embed/uHTgDEU5ziE?rel=0&quot; class=&quot;embedVideo-iframe&quot; style=&quot;border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot; allowfullscreen&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Right, and didn’t you find any problem on the journey?&lt;/h2&gt;
+&lt;p&gt;Yeah, how wouldn’t I? The main problem is, by Whatsapp policies we are not allowed on automating our accounts.
+But, once the app emulates a browser, they won’t notice unless you add your bot to many chats and the volume of messages gets too high.&lt;/p&gt;
+&lt;p&gt;So my tip is, don’t do that! Keep it just for personal use.&lt;/p&gt;
+&lt;h2&gt;The end!&lt;/h2&gt;
+&lt;p&gt;So again, the code is at &lt;a href=&quot;https://github.com/Futebot/futezap&quot;&gt;https://github.com/Futebot/futezap&lt;/a&gt; and is open-source.&lt;/p&gt;
+&lt;p&gt;A big thanks to &lt;a href=&quot;https://github.com/fsantarelli&quot;&gt;Felipe Santarelli&lt;/a&gt; for providing a SIM Card for the Bot, to &lt;a href=&quot;https://github.com/alephmelo&quot;&gt;Aleph Melo&lt;/a&gt; for Dockerizing it and &lt;a href=&quot;https://github.com/leeeandroo&quot;&gt;Leeeandroo&lt;/a&gt; for documenting.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How far can I go to provide free apps?]]></title><description><![CDATA[Introduction My life with development started at 2001, when I was learning HTML, Javascript and Photoshop. But for me, with 13 years old it…]]></description><link>https://flaviojmendes.com//why-do-i-develop-free-stuff/</link><guid isPermaLink="false">https://flaviojmendes.com//why-do-i-develop-free-stuff/</guid><pubDate>Tue, 07 Jul 2020 17:02:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;My life with development started at 2001, when I was learning HTML, Javascript and Photoshop. But for me, with 13 years old it was pointless having the knowledge and not using it.&lt;/p&gt;
 &lt;p&gt;Then I started creating websites for everything. My first was called “It is good HP” had aeroplane pictures and jokes. Then I created uncountable others for my friends.&lt;/p&gt;
 &lt;p&gt;This was a website I develop for a friend’s party:&lt;/p&gt;
