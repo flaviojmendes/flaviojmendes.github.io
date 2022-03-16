@@ -4,7 +4,9 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Image from "gatsby-image"
-
+import GitHubCalendar from "react-github-calendar"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoHighlightElement();
 
 const Layout = ({ location, title, children }) => {
 
@@ -48,15 +50,22 @@ const Layout = ({ location, title, children }) => {
       </Row>
       <main>{children}</main>
       <footer>
-        <Col  className={'bio'}>
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            Do you like my texts? You can buy me a coffee: {' '}
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="LD4JGZCK4VUFC" />
-            <input className={'align-middle'} type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_IE/i/scr/pixel.gif" width="1" height="1" />
-          </form>
-        </Col>
+        <Row>
+          <Col  className={'bio'}>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              Do you like my texts? You can buy me a coffee: {' '}
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="LD4JGZCK4VUFC" />
+              <input className={'align-middle'} type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/en_IE/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </Col>
+        </Row>
+        <Row>
+          <Col className={'text-center'}>
+            <GitHubCalendar username="flaviojmendes" />
+          </Col>
+        </Row>
       </footer>
     </Container>
   )

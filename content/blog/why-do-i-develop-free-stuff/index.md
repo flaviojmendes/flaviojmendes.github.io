@@ -10,7 +10,7 @@ description: "My life with development started at 2001, when I was learning HTML
 
 My life with development started at 2001, when I was learning HTML, Javascript and Photoshop. But for me, with 13 years old it was pointless having the knowledge and not using it.
 
-Then I started creating websites for everything. My first was called "It is good HP" had aeroplane pictures and jokes. Then I created uncountable others for my friends.
+Then I started creating websites for everything. My first was called ["It is good HP"](https://bit.ly/itisgoodhp) had aeroplane pictures and jokes. Then I created uncountable others for my friends.
 
 This was a website I develop for a friend's party:
 
